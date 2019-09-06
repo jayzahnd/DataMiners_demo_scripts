@@ -10,7 +10,7 @@ The elements present are the level builder, the pathfinding manager, the selecti
 
 * CameraReferenceSingleton.cs *(Tells where to find the camera prefabs, i.e. pull them from “Assets/Resources” )*
 
-* UI_ButtonPackAssociator *(Provides player units with a reference to their respective action buttons)*
+* UI_ButtonPackAssociator *(Provides player units with a reference to their respective UI action buttons)*
 
 ## UI/GUI/Camera scripts:
 * CameraControl.cs
