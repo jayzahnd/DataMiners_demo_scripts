@@ -12,7 +12,7 @@ them from “Assets/Resources” )
 UI_ButtonPackAssociator (provides player units with a reference to their
 respective action buttons).
 
-### UI/GUI/Camera
+### UI/GUI/Camera:
 CameraControl.cs
 
 UI_SetCamsOrder.cs (only relevant if one wishes to make screenspace - overlay UI
@@ -31,7 +31,7 @@ RedGlowScript.cs
 
 ParticleEffectScipt.cs
 
-### Selection handling
+### Selection handling:
 UnitSelectionManager.cs
 
 MouseOverUnit.cs
@@ -42,7 +42,7 @@ RectangleDragSelection.cs (for units, GUI visualisation + bound selection)
 
 HoverAndSelection.cs (for Blocks)
 
-### Units general
+### Units general:
 PlayerControlled.cs
 
 Unit.cs (non Monobehaviour, contains vars and virtual functions)
@@ -58,7 +58,7 @@ NewEnemyAIScript.cs
 EnemyAnimationScript.cs
 
 EnemyShootingScipt.cs
-### Pathfinding
+### Pathfinding:
 PathFinderRequestManager.cs
 
 Pathfinding_a3.cs
@@ -69,7 +69,7 @@ HeapOptim.cs (allows to treat mapnodes as heap items, and make pathfinding
 faster)
 
 DestinationPoint.cs (associated to its own unique unit)
-### Terrain info
+### Terrain info:
 GroundTile.cs (non Monobehaviour)
 
 GroundTileScript.cs (Mono with reference to GT)
@@ -85,9 +85,13 @@ The following would only be checked for when interacted with (“if it contains�
 then…..”). They are attached to blocks, not tiles:
 
 CleanMeImCorrupted.cs
+
 Explodable.cs
+
 Mineable.cs
+
 Tough.cs
-Shader
+
+### Shader
 CircleSelectorShader.shader (for the projected texture cast around
 highlighted/selected friendly units).
