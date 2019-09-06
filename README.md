@@ -3,6 +3,8 @@ This repository contains the main functionality scripts for the tech demo of Dat
 
 The elements present are the level builder, the pathfinding manager, the selection manager, the UI integration scripts, unit data, and a shader. A centralised distance calculator is also in the making.
 
+**NOTE:** Check the wiki for more information on some of those features.
+
 ## General level building and management scripts:
 * TerrainBuilder_02.cs *(Primary level constructor script)*
 
