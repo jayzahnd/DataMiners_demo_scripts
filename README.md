@@ -8,7 +8,7 @@ The elements present are the level builder, the pathfinding manager, the selecti
 
 * PixelClass.cs *(Used when scanning the level BMP image)*
 
-* CameraReferenceSingleton.cs *(Tells where to find the camera prefabs, i.e. pullthem from “Assets/Resources” )*
+* CameraReferenceSingleton.cs *(Tells where to find the camera prefabs, i.e. pull them from “Assets/Resources” )*
 
 * UI_ButtonPackAssociator *(Provides player units with a reference to their respective action buttons)*
 
