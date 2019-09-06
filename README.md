@@ -1,25 +1,27 @@
 # DataMiners_demo_scripts
-This repository contains the main functionality scripts for the tech demo of Data Miners, an rts-management game. The elements present are the level builder, the pathfinding manager, the selection manager, the UI integration scripts, unit data, and a shader. A centralised distance calculator is also in the making.
+This repository contains the main functionality scripts for the tech demo of Data Miners, an rts-management game where the player controls little robots trying to clean up a computer's circuit board after a virus infection. The project was co-developped with my colleague Luke Kiernan, who worked on the art assets, animation, minimap setup, and provided the initial enemy AI.
+
+The elements present are the level builder, the pathfinding manager, the selection manager, the UI integration scripts, unit data, and a shader. A centralised distance calculator is also in the making.
 
 ## General level building and management scripts:
-* TerrainBuilder_02.cs *(primary level constructor script)*
+* TerrainBuilder_02.cs *(Primary level constructor script)*
 
-* PixelClass.cs *(used when scanning the level BMP image)*
+* PixelClass.cs *(Used when scanning the level BMP image)*
 
-* CameraReferenceSingleton.cs *(tells where to find the camera prefabs, i.e. pullthem from “Assets/Resources” )*
+* CameraReferenceSingleton.cs *(Tells where to find the camera prefabs, i.e. pullthem from “Assets/Resources” )*
 
-* UI_ButtonPackAssociator *(provides player units with a reference to their respective action buttons)*
+* UI_ButtonPackAssociator *(Provides player units with a reference to their respective action buttons)*
 
 ## UI/GUI/Camera scripts:
 * CameraControl.cs
 
-* UI_SetCamsOrder.cs *(only relevant if one wishes to make screenspace - overlay UI elements. This script automates their setup if needed)*
+* UI_SetCamsOrder.cs *(Only relevant if one wishes to make screenspace - overlay UI elements. This script automates their setup if needed)*
 
 * GameScrollingBackground.cs
 
 * MinimapClickToGoThere.cs
 
-* UI_ActionsButtons.cs *(contains listener to enable/disable action buttons associated with a given player unit or building)*
+* UI_ActionsButtons.cs *(Contains listener to enable/disable action buttons associated with a given player unit or building)*
 
 * GreenGlowScript.cs *(Unit visual effects)*
 
@@ -34,22 +36,22 @@ This repository contains the main functionality scripts for the tech demo of Dat
 
 * HighlightableUnit.cs
 
-* RectangleDragSelection.cs *(for units, GUI visualisation + bound selection)*
+* RectangleDragSelection.cs *(For units, GUI visualisation + bound selection)*
 
-* HoverAndSelection.cs *(for Blocks)*
+* HoverAndSelection.cs *(For Blocks)*
 
 ## Units general scripts:
 * PlayerControlled.cs
 
-* Unit.cs *(non Monobehaviour, contains vars and virtual functions)*
+* Unit.cs *(Non Monobehaviour, contains vars and virtual functions)*
 
 * UnitComponent.cs *(Monobehaviour, with an internal reference to its own Unit.cs)*
 
-* Unit_Miner.cs
+* Unit_Miner.cs *(Exptends from Unit, holds miner-specific data)*
 
 * StorageStatus.cs
 
-* NewEnemyAIScript.cs
+* NewEnemyAIScript.cs *(This is mostly for experimenting now. For composition puposes, it should later be broken down into smaller, reusable parts)*
 
 * EnemyAnimationScript.cs
 
@@ -59,23 +61,23 @@ This repository contains the main functionality scripts for the tech demo of Dat
 
 * Pathfinding_a3.cs
 
-* MapNode.cs
+* MapNode.cs *(node object)*
 
-* HeapOptim.cs *(allows to treat mapnodes as heap items, and make pathfinding faster)*
+* HeapOptim.cs *(Allows to treat mapnodes as heap items, and make pathfinding faster)*
 
-* DestinationPoint.cs *(associated to its own unique unit. Purpose explained in wiki)*
+* DestinationPoint.cs *(Associated to its own unique unit. Its puprose is to "reserve" the player unit's destination coord by physically occupying it while said unit is en route. This prevents group selection from converging towards the same spot)*
 ## Terrain info scripts:
-* GroundTile.cs *(non Monobehaviour)*
+* GroundTile.cs *(Non Monobehaviour)*
 
 * GroundTileScript.cs *(Mono with reference to GT)*
 
-* LevelBlock.cs *(for mineable blocks)*
+* LevelBlock.cs *(For mineable blocks)*
 
 * LevelBlockScript.cs
 
 * 8 x “ xxxxxGround.cs ” *(8 different terrain property scripts. All extend from "GroundTile.cs")*
 
-***The following would only be checked for when interacted with (“if it contains…, then…..”). They are attached to blocks, not tiles:***
+***The following would only be checked for when interacted with (“if it contains…, then…..”). They are attached to blocks, not tiles, and should not have any function inside them:***
 
 * CleanMeImCorrupted.cs
 
