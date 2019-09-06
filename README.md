@@ -66,7 +66,7 @@ The elements present are the level builder, the pathfinding manager, the selecti
 * HeapOptim.cs *(Allows to treat mapnodes as heap items, and make pathfinding faster)*
 
 * DestinationPoint.cs *(Associated to its own unique unit. Its puprose is to "reserve" the player unit's destination coord by physically occupying it while said unit is en route. This prevents group selection from converging towards the same spot)*
-## Terrain info and Block info scripts:
+## Terrain info info scripts:
 * GroundTile.cs *(Non Monobehaviour)*
 
 * GroundTileScript.cs *(Mono with reference to GT)*
@@ -77,7 +77,8 @@ The elements present are the level builder, the pathfinding manager, the selecti
 
 * 8 x “ xxxxxGround.cs ” *(8 different terrain property scripts. All extend from "GroundTile.cs")*
 
-***The following would only be checked for when interacted with (“if it contains…, then…..”). They are attached to blocks, not tiles, and should not have any function inside them:***
+## Block info scripts: 
+***Note: The following would only be checked for when interacted with (“if it contains…, then…..”). They are attached to blocks, not tiles, and should not have any function inside them:***
 
 * CleanMeImCorrupted.cs
 
