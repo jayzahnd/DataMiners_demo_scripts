@@ -1,7 +1,7 @@
 # DataMiners_demo_scripts
 This repository contains the main functionality scripts for the tech demo of Data Miners, an rts-management game. The elements present are the level builder, the pathfinding manager, the selection manager, the UI integration scripts, unit data, and a shader. A centralised distance calculator is also in the making.
 
-### General level building and management:
+## General level building and management scripts:
 TerrainBuilder_02.cs (primary level constructor script)
 
 PixelClass.cs (used when scanning the level BMP image)
@@ -12,7 +12,7 @@ them from “Assets/Resources” )
 UI_ButtonPackAssociator (provides player units with a reference to their
 respective action buttons).
 
-### UI/GUI/Camera:
+## UI/GUI/Camera scripts:
 CameraControl.cs
 
 UI_SetCamsOrder.cs (only relevant if one wishes to make screenspace - overlay UI
@@ -31,7 +31,7 @@ RedGlowScript.cs
 
 ParticleEffectScipt.cs
 
-### Selection handling:
+## Selection handling scripts:
 UnitSelectionManager.cs
 
 MouseOverUnit.cs
@@ -42,7 +42,7 @@ RectangleDragSelection.cs (for units, GUI visualisation + bound selection)
 
 HoverAndSelection.cs (for Blocks)
 
-### Units general:
+## Units general scripts:
 PlayerControlled.cs
 
 Unit.cs (non Monobehaviour, contains vars and virtual functions)
@@ -58,7 +58,7 @@ NewEnemyAIScript.cs
 EnemyAnimationScript.cs
 
 EnemyShootingScipt.cs
-### Pathfinding:
+## Pathfinding scripts:
 PathFinderRequestManager.cs
 
 Pathfinding_a3.cs
@@ -69,7 +69,7 @@ HeapOptim.cs (allows to treat mapnodes as heap items, and make pathfinding
 faster)
 
 DestinationPoint.cs (associated to its own unique unit)
-### Terrain info:
+## Terrain info scripts:
 GroundTile.cs (non Monobehaviour)
 
 GroundTileScript.cs (Mono with reference to GT)
@@ -92,6 +92,6 @@ Mineable.cs
 
 Tough.cs
 
-### Shader
+## Shader:
 CircleSelectorShader.shader (for the projected texture cast around
 highlighted/selected friendly units).
